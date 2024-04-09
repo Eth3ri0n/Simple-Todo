@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+input {
+  padding: 8px 15px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+button {
+  font-weight: bolder;
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 20%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+form input {
+  flex: 1;
+  margin-right: 15px;
+}
+form button {
+  background-color: #098918;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-block-start: 15px;
+  margin-block-end: 15px;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+li:hover {
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 10px 0 10px 5px;
+}
+li input {
+  flex: 1;
+  margin-right: 15px;
+}
+li span.todo {
+  flex: 0 0 20px;
+  height: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin-right: 15px;
+  border: 2px solid #333;
+}
+li span.done {
+  background-color: #333;
+  cursor: pointer;
+}
+li p {
+  flex: 1;
+}
+li p.done {
+  text-decoration: line-through;
+}
+li button:first-of-type {
+  background-color: #ff9d00;
+  margin-right: 3px;
+}
+li button:last-of-type {
+  background-color: #f00;
+  margin-left: 3px;
+}
